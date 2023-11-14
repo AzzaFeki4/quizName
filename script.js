@@ -13,7 +13,7 @@ let question=[
         answer_one: "Wasser",
         answer_two: "Helium",
         answer_three: "Sauerstoff",
-        answer_four: "Job",
+        answer_four: "Jod",
         right_answer:1,
         answered: false
     },
@@ -48,6 +48,8 @@ let question=[
 ]
 
 let currentQuestion = 0;
+let successAudio = new Audio('./img/right.mp3');
+let failAudio = new Audio('./img/wrong.mp3');
 
 function init(){
     document.getElementById('all-questions').innerHTML= question.length;
@@ -80,12 +82,14 @@ function answer(selection){
         if(selection.includes(question[currentQuestion]['right_answer'])){
             document.getElementById('answer_'+question[currentQuestion]['right_answer']).parentNode.classList.add('bg-success');
             question[currentQuestion]['rightOr_Not']=1;
+            successAudio.play();
         }
         
         else{
             document.getElementById(selection).parentNode.classList.add('bg-danger');
             document.getElementById('answer_'+question[currentQuestion]['right_answer']).parentNode.classList.add('bg-success');
             question[currentQuestion]['rightOr_Not']=0;
+            failAudio.play();
         }
         question[currentQuestion]['answered']=true;
     }
