@@ -6,9 +6,7 @@ let question=[
         answer_three: "Kanada",
         answer_four: "Belgien",
         right_answer:2,
-        answered: false,
-        rightOr_Not: 0,
-        percentage:0
+        answered: false
     },
     {
         question: "Was ist H2O?",
@@ -17,9 +15,7 @@ let question=[
         answer_three: "Sauerstoff",
         answer_four: "Job",
         right_answer:1,
-        answered: false,
-        rightOr_Not: 0,
-        percentage:25
+        answered: false
     },
     {
         question: "In welchem Land wohnen die meisten Menschen?",
@@ -29,8 +25,7 @@ let question=[
         answer_four: "Kenia",
         right_answer:1,
         answered: false,
-        rightOr_Not: 0,
-        percentage:50
+        rightOr_Not: 0
     },
     {
         question: "Auf welchen Kontinent liegt die Wüste Sahara?",
@@ -39,9 +34,7 @@ let question=[
         answer_three: "Afrika",
         answer_four: "Europa",
         right_answer:3,
-        answered: false,
-        rightOr_Not: 0,
-        percentage:75
+        answered: false
     },
     {
         question: "Von wem stammt die Relativitätstheorie?",
@@ -50,9 +43,7 @@ let question=[
         answer_three: "Marie Curie",
         answer_four: "Albert Einstein",
         right_answer:4,
-        answered: false,
-        rightOr_Not: 0,
-        percentage:100
+        answered: false
     }
 ]
 

@@ -36,6 +36,7 @@ body{
 
 .bg-success{
     background-color: green;
+<<<<<<< HEAD
 }
 
 #cards-body{
@@ -49,4 +50,6 @@ body{
 
 #again_button_lose{
     margin-left: 100px;
+=======
+>>>>>>> 7356748629e1e2187b3412a8a3e869cb9baadafa
 }
